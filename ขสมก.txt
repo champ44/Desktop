@@ -1,0 +1,2 @@
+com_rapp, configuration.php
+แก้ config com_rapp
