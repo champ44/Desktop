@@ -1,9 +1,0 @@
-ALTER TABLE `ros_rapp_mainform` CHANGE `subjectclass` `subjectclass` ENUM('1','2','3') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'ประเภทเรื่องเก่าใหม่ 1=''ใหม่'', 2=''เก่า'', 3=''เดิม''';
-
-ALTER TABLE `ros_rapp_mainform_revoke` CHANGE `subjectclass` `subjectclass` ENUM('1','2','3') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'ประเภทเรื่องเก่าใหม่ 1=''ใหม่'', 2=''เก่า''';
-
-ALTER TABLE `ros_rbasicdata_opstatus` ADD `note` TEXT NOT NULL COMMENT 'คำอธิบาย' AFTER `title`;
-
-INSERT INTO `ros_rbasicdata_opstatus` (`id`, `title`, `note`, `ordering`, `state`, `checked_out`, `checked_out_time`, `created`, `created_by`, `modified`, `modified_by`) VALUES ('18', 'ส่งให้อัยการฟ้อง', '', '17', '1', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '676', '2014-08-25 10:24:31', '676');
-
-ALTER TABLE `ros_rapp_returnone` DROP `out_date`;
